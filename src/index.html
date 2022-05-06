@@ -21,6 +21,7 @@
     >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
+
         <label class="fieldElem">
           Surname:
           <input
@@ -29,6 +30,7 @@
             autocomplete="off"
           >
         </label>
+
         <label class="fieldElem">
           Name:
           <input
@@ -39,6 +41,7 @@
             autocomplete="off"
           >
         </label>
+
         <label class="fieldElem">
           How old are You?
           <input
@@ -49,6 +52,7 @@
             id="age"
           >
         </label>
+
         <label class="fieldElem">
           Full date of birth:
           <input
@@ -56,6 +60,7 @@
             id="dateBirth"
           >
         </label>
+
         <label class="fieldElem lastElem">
           I accept the term of the agreement
           <input
@@ -65,8 +70,10 @@
           >
         </label>
       </fieldset>
+
       <fieldset class="fieldset">
         <legend>Registration</legend>
+
         <label class="fieldElem">E-mail:
           <input
             type="email"
@@ -75,6 +82,7 @@
             id="email"
           >
         </label>
+
         <label class="fieldElem  lastElem">
           Password:
           <input
@@ -85,14 +93,23 @@
           >
         </label>
       </fieldset>
+
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <label class="fieldElem">Do you love cats?
-          <input type="radio" name="loveCats">
-          Yes
-          <input type="radio" name="loveCats">
-          No
-        </label>
+
+        <div class="fieldElem">
+          Do you love cats?
+          <label >
+            <input type="radio" name="loveCats">
+            Yes
+          </label>
+
+          <label>
+            <input type="radio" name="loveCats">
+            No
+          </label>
+        </div>
+
         <label class="fieldElem">
           What is your favorite color?
           <input
@@ -101,6 +118,7 @@
             id="color"
           >
         </label>
+
         <label class="fieldElem">
           What time do you go to bed?
           <input
@@ -108,6 +126,7 @@
             id="bedTime"
           >
         </label>
+
         <label class="fieldElem">
           What are your favorite brand of cars?
           <select multiple id="favCars">
@@ -116,6 +135,7 @@
             <option>Lada</option>
           </select>
         </label>
+
         <label class="fieldElem lastElem">
           How do you rate our work?
           <input
@@ -125,8 +145,10 @@
           >
         </label>
       </fieldset>
+
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
+
         <label class="fieldElem">
           Comments:
           <textarea
@@ -135,6 +157,7 @@
             id="commentAddInfo">
           </textarea>
         </label>
+
         <label class="fieldElem lastElem">
           Would you recommend us?
           <select name="recommend">
@@ -143,8 +166,10 @@
           </select>
         </label>
       </fieldset>
+
       <button type="submit" name="submit">Submit</button>
     </form>
+    
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
