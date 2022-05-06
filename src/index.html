@@ -21,17 +21,16 @@
     >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <div class="fieldElem">
-          <label for="surname">Surname:</label>
+        <label class="fieldElem">
+          Surname:
           <input
-              type="text"
-              name="surname"
-              id="surname"
-              autocomplete="off"
-            >
-        </div>
-        <div class="fieldElem">
-          <label for="nameUser">Name:</label>
+            type="text"
+            id="surname"
+            autocomplete="off"
+          >
+        </label>
+        <label for="nameUser" class="fieldElem">
+          Name:
           <input
             type="text"
             name="name"
@@ -39,39 +38,37 @@
             required
             autocomplete="off"
           >
-        </div>
-        <div class="fieldElem">
-          <label for="age">How old are You?</label>
+        </label>
+        <label class="fieldElem">
+          How old are You?
           <input
             type="number"
             min="0"
             max="100"
             value="12"
             id="age"
-            name="age"
           >
-        </div>
-        <div class="fieldElem">
-          <label for="dateBirth">Full date of birth:</label>
+        </label>
+        <label class="fieldElem" for="dateBirth">
+          Full date of birth:
           <input
             type="date"
             name="dateBirth"
             id="dateBirth"
           >
-        </div>
-        <div class="fieldElem lastElem">
-          <label for="termsAgreed">I accept the term of the agreement</label>
+        </label>
+        <label class="fieldElem lastElem" for="termsAgreed">
+          I accept the term of the agreement
           <input
             type="checkbox"
             name="termsAgreed"
             id="termsAgreed"required
           >
-        </div>
+        </label>
       </fieldset>
       <fieldset class="fieldset">
         <legend>Registration</legend>
-        <div class="fieldElem">
-          <label for="email">E-mail:</label>
+        <label class="fieldElem" for="email">E-mail:
           <input
             type="email"
             required
@@ -79,9 +76,9 @@
             name="email"
             id="email"
           >
-        </div>
-        <div class="fieldElem  lastElem">
-          <label for="password">Password:</label>
+        </label>
+        <label class="fieldElem  lastElem" for="password">
+          Password:
           <input
             type="password"
             name="password"
@@ -89,65 +86,67 @@
             minlength="5"
             maxlength="16"
           >
-        </div>
+        </label>
       </fieldset>
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <div class="fieldElem">Do you love cats?
-          <input type="radio" name="loveCatsYes">
+        <label class="fieldElem">Do you love cats?
+          <input type="radio" name="loveCats">
           Yes
-          <input type="radio" name="loveCatsNo">
+          <input type="radio" name="loveCats">
           No
-        </div>
-        <div class="fieldElem">
-          <label for="color">What is your favorite color?</label>
+        </label>
+        <label class="fieldElem" for="color">
+          What is your favorite color?
           <input
             type="color"
             name="color"
             id="color"
           >
-        </div>
-        <div class="fieldElem">
-          <label for="bedTime">What time do you go to bed?</label>
+        </label>
+        <label class="fieldElem" for="bedTime">
+          What time do you go to bed?
           <input
             type="time"
             name="bedTime"
             id="bedTime"
           >
-        </div>
-        <div class="fieldElem">
-          <label for="favCars">What are your favorite brand of cars?</label>
+        </label>
+        <label class="fieldElem" for="favCars">
+          What are your favorite brand of cars?
           <select multiple id="favCars">
             <option>BMW</option>
             <option>Audi</option>
             <option>Lada</option>
           </select>
-        </div>
-        <div class="fieldElem lastElem">How do you rate our work?
+        </label>
+        <label class="fieldElem lastElem">
+          How do you rate our work?
           <input
             type="range"
             value="1"
             name="workRate"
           >
-        </div>
+        </label>
       </fieldset>
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
-        <div class="fieldElem">
-          <label for="commentAddInfo">Comments:</label>
+        <label class="fieldElem" for="commentAddInfo">
+          Comments:
           <textarea
             cols="20"
             rows="2"
             name="commentAddInfo"
             id="commentAddInfo">
           </textarea>
-        </div>
-        <div class="fieldElem lastElem">Would you recommend us?
+        </label>
+        <label class="fieldElem lastElem">
+          Would you recommend us?
           <select name="recommend">
             <option name="recommendYes" selected>yes</option>
             <option name="recommendNo">no</option>
           </select>
-        </div>
+        </label>
       </fieldset>
       <button type="submit" name="submit">Submit</button>
     </form>
