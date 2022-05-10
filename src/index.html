@@ -26,7 +26,7 @@
           Surname:
           <input
             type="text"
-            id="surname"
+            name="surname"
             autocomplete="off"
           >
         </label>
@@ -35,8 +35,7 @@
           Name:
           <input
             type="text"
-            name="name"
-            id="nameUser"
+            name="nameUser"
             required
             autocomplete="off"
           >
@@ -49,7 +48,7 @@
             min="0"
             max="100"
             value="12"
-            id="age"
+            name="age"
           >
         </label>
 
@@ -57,15 +56,15 @@
           Full date of birth:
           <input
             type="date"
-            id="dateBirth"
+            name="dateBirth"
           >
         </label>
 
-        <label class="fieldElem lastElem">
+        <label class="fieldElem">
           I accept the term of the agreement
           <input
             type="checkbox"
-            id="termsAgreed"
+            name="termsAgreed"
             required
           >
         </label>
@@ -79,15 +78,15 @@
             type="email"
             required
             placeholder="email@example.com"
-            id="email"
+            name="email"
           >
         </label>
 
-        <label class="fieldElem  lastElem">
+        <label class="fieldElem">
           Password:
           <input
             type="password"
-            id="password"
+            name="password"
             minlength="5"
             maxlength="16"
           >
@@ -115,7 +114,6 @@
           <input
             type="color"
             name="color"
-            id="color"
           >
         </label>
 
@@ -123,20 +121,20 @@
           What time do you go to bed?
           <input
             type="time"
-            id="bedTime"
+            name="bedTime"
           >
         </label>
 
         <label class="fieldElem">
           What are your favorite brand of cars?
-          <select multiple id="favCars">
+          <select multiple name="favCars">
             <option>BMW</option>
             <option>Audi</option>
             <option>Lada</option>
           </select>
         </label>
 
-        <label class="fieldElem lastElem">
+        <label class="fieldElem">
           How do you rate our work?
           <input
             type="range"
@@ -154,22 +152,22 @@
           <textarea
             cols="20"
             rows="2"
-            id="commentAddInfo">
+            name="commentAddInfo">
           </textarea>
         </label>
 
-        <label class="fieldElem lastElem">
+        <label class="fieldElem">
           Would you recommend us?
-          <select name="recommend">
-            <option name="recommendYes" selected>yes</option>
-            <option name="recommendNo">no</option>
+          <select>
+            <option value="recommendYes" selected>yes</option>
+            <option value="recommendNo">no</option>
           </select>
         </label>
       </fieldset>
 
       <button type="submit" name="submit">Submit</button>
     </form>
-    
+
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
